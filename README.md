@@ -1,5 +1,7 @@
 # affordable_rental_tracking
 
+<a href="https://docs.google.com/document/d/1h_whowYO5vyz33_4gBjxbH1tO2SHVkW9zOFTRv9sAKo/edit</href">Project Plan (Working Doc)</a>
+
 Community Partners:
 <ul>
 <li>Open Raleigh Summer Intern & Project Manager - Morgan Spencer; morgan.spencer@raleighnc.gov</li>
