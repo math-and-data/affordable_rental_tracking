@@ -1,9 +1,11 @@
 # affordable_rental_tracking
 
 Community Partners:
-Open Raleigh Summer Intern & Project Manager - Morgan Spencer; morgan.spencer@raleighnc.gov
-City of Raleigh - Housing and Neighborhoods, Valerie Malloy, Dpty Director
-City of Raleigh - Housing and Neighborhoods, Shawn McNamara, Planner
+<ul>
+<li>Open Raleigh Summer Intern & Project Manager - Morgan Spencer; morgan.spencer@raleighnc.gov</li>
+<li>City of Raleigh - Housing and Neighborhoods, Valerie Malloy, Dpty Director</li>
+<li>City of Raleigh - Housing and Neighborhoods, Shawn McNamara, Planner</li>
+</ul>
 
 Project Overview:
 Over the next 20 years, Raleigh's population is expected to double, with the surrounding Triangle area growing rapidly as well. Metro areas around the country have struggled to get sustainable economic development right, and without proper planning, Raleigh may join them. In particular, the city's housing policies may fail to keep up with the rapid development due to a lack of accessible tools tracking changes in the affordable housing inventory.
