@@ -1,0 +1,53 @@
+Affordable Housing Project - CityCampNC 2015
+Gjeltema
+6/13/2015
+========================================================
+
+We merge the available rental data from Wake county.
+
+```{r}
+#install.packages("dplyr")
+#install.packages("ggplot2")                 
+#library("magrittr")
+#library("stringr")
+library("dplyr")
+library("ggplot2")
+
+aptlist <- read.csv("2011 APT list.csv", header=TRUE)
+sflist <- read.csv("2011 SF list.csv", header=TRUE)
+mhlist <- read.csv("2011 MH list.csv", header=TRUE)
+mflist <- read.csv("2011 MF list.csv", header=TRUE)
+duplexlist <- read.csv("2011 Duplex list.csv", header=TRUE)
+condolist <- read.csv("2011 Condo List.csv", header=TRUE)
+thlist <- read.csv("2011 TH list.csv", header=TRUE)
+head(aptlist)
+head(condolist)
+names(aptlist)
+names(mflist)
+names(mhlist)
+names(sflist)
+names(thlist)
+names(duplexlist)
+names(condolist) # has an extra column
+
+full_rentals <- 
+  bind_rows(aptlist, sflist) %>% 
+  bind_rows(duplexlist) %>%
+  bind_rows(mflist) %>%
+  bind_rows(mhlist) %>%
+  bind_rows(thlist) %>%
+  mutate(Condo.Complex.Name = NA) %>%
+  bind_rows(condolist)
+
+
+str(full_rentals)
+full_rentals  <- full_rentals %>%
+  mutate(Form.ID = as.factor(Form.ID), 
+         Billing.Year = as.ordered(Billing.Year),
+         Dwelling.Type= as.factor(Dwelling.Type)) %>% 
+  select(-Fees);
+
+write.csv(full_rentals,"rental_data.csv")
+
+```
+
